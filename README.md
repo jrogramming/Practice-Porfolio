@@ -22,8 +22,8 @@ A collection of interactive Python applications built with [Gradio](https://www.
 ```text
 .
 └── gradio/
-    ├── greeter/
-    └── purple-filter/
+    ├── gradioImageFilter.py
+    └── gradioTutorial.py
 ```
 
 ---
