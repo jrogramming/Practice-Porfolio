@@ -1,7 +1,7 @@
 # ♠ &nbsp; Purple Detector &nbsp; ♠
 
 <p align="center">
-  <em>A beginner-friendly introduction to real-time color detection using OpenCV and Python.</em>
+  <em>Real-time color detection using OpenCV and Python.</em>
 </p>
 
 ---
@@ -10,9 +10,7 @@
 
 A real-time computer vision experiment that uses a webcam to detect purple objects and draw a bounding box around detected regions.
 
-The project explores how computers identify colors, isolate pixels, and locate objects within an image.
-
-**What you'll learn:**
+**Purpose:**
 - Reading live webcam footage with OpenCV.
 - Understanding RGB, BGR, and HSV color spaces.
 - Creating binary masks with color thresholds.
@@ -129,5 +127,5 @@ A tolerance range is applied to Hue, while minimum saturation and brightness thr
 ---
 
 <p align="center">
-  <sub>♠ &nbsp; Learning computer vision, one pixel at a time. &nbsp; ♠</sub>
+  <sub>♠ &nbsp; Have fun! &nbsp; ♠</sub>
 </p>
