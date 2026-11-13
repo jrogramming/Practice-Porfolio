@@ -23,10 +23,11 @@ while True:
         x1, y1, x2, y2 = bbox # unpack the bounding box coordinates
         frame = cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 5)
 
-        cv2.imshow('frame', frame) # show the frame with the bounding box
+    cv2.imshow('frame', frame) # show the frame with the bounding box
 
-        if cv2.waitKey(1) & 0xFF == ord('q'): # press 'q' to quit
-            break
+    if cv2.waitKey(1) & 0xFF == ord('q'): # press 'q' to quit
+        break
 
         capture.release() # release the capture object
         cv2.destroyAllWindows() # close, done!
+        

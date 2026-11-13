@@ -13,15 +13,15 @@ def get_limits(color):
             # so red is at 0 and 179 but when detecting limits with a tolerance of 10
 
     if hue >= 165:  # Upper limit for divided red hue
-        lowerLimit = np.array([hue - 10, 100, 100], dtype=np.uint8) 
+        lowerLimit = np.array([hue - 10, 75, 100], dtype=np.uint8) 
         upperLimit = np.array([180, 255, 255], dtype=np.uint8) # towards the pink range, the upper limit is manually capped at 180 because it's def red at that point
 
     elif hue <= 15:  # Lower limit for divided red hue
-        lowerLimit = np.array([0, 100, 100], dtype=np.uint8) # towards the orange range, the lower limit is manually capped at 0 because it's def red with a hue under 15
+        lowerLimit = np.array([0, 75, 100], dtype=np.uint8) # towards the orange range, the lower limit is manually capped at 0 because it's def red with a hue under 15
         upperLimit = np.array([hue + 10, 255, 255], dtype=np.uint8)
 
     else:
-        lowerLimit = np.array([hue - 10, 100, 100], dtype=np.uint8)
+        lowerLimit = np.array([hue - 10, 75, 100], dtype=np.uint8)
         upperLimit = np.array([hue + 10, 255, 255], dtype=np.uint8)
 
         # 165 and 15 is because it absolutely prevents the need for special handling well (by 5) before the tolerance can send it outside 0 or 179.
