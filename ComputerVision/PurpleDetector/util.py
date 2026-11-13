@@ -1,6 +1,5 @@
 import numpy as np
 import cv2
-# pip install opencv-python pip install Pillow
 
 def get_limits(color):
     c = np.uint8([[color]]) # position and RGB value (h, w, rgb)
