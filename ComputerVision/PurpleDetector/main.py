@@ -3,15 +3,14 @@ from PIL import Image
 # Python image-processing library
 from util import get_limits
 
-capture = cv2.VideoCapture(0)
+capture = cv2.VideoCapture(0, cv2.CAP_DSHOW)
 
 purple = (128, 0, 128) # BGR value for purple so get_limits can do the math for what
+lowerLimit, upperLimit = get_limits(purple)
 
 while True:
     ret, frame = capture.read()
     hsvImage = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV) # convert to HSV
-
-    lowerLimit, upperLimit = get_limits(purple)
 
     mask = cv2.inRange(hsvImage, lowerLimit, upperLimit) # mask for the color purple
     mask_ = Image.fromarray(mask) # convert to PIL image
