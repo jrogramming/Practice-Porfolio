@@ -41,7 +41,7 @@ st.markdown(
     }
     [data-testid="stVerticalBlockBorderWrapper"] {
         background: white; border-color: var(--line-pink) !important; border-radius: 14px;
-        padding: 1rem 2.6rem 2rem;
+        padding: 1rem 2.6rem 1rem;
     }
     [data-testid="stSlider"] [data-baseweb="slider"] div[role="slider"] { background: var(--pink); }
     </style>
@@ -100,7 +100,7 @@ if query:
                     )
                 if item["brand"]:
                     st.caption(item["brand"])
-                details, description = st.columns([0.28, 0.72], vertical_alignment="top")
+                details, description = st.columns([0.24, 0.76], vertical_alignment="top")
                 with details:
                     st.write(f"Rating: **{item['rating'] or 'not listed'}**")
                     st.write(f"Price: **{item['price'] or 'not listed'}**")
