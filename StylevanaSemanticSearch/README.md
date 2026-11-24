@@ -102,5 +102,5 @@ The included benchmark is a lightweight, reproducible comparison rather than a v
 ---
 
 <p align="center">
-  <em>Jrogramming's Workshop — Consistent structure, individual projects.</em>
+  <em>Style yourself...semantically</em>
 </p>
