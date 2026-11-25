@@ -4,6 +4,14 @@
   <em>A collection of hands-on projects exploring data science, programming, and creative technology.</em>
 </p>
 
+### &nbsp; ♛ &nbsp; NATURAL LANGUAGE SEARCH
+
+Interactive applications exploring text processing, information retrieval, and semantic search.
+
+| Project | Description | Technologies |
+|:---|:---|:---|
+| **01. Stylevana Product Discovery** | Semantic search application for a scraped beauty catalog, comparing Sentence Transformer embeddings with TF-IDF ranking. | Python · Streamlit · Sentence Transformers · scikit-learn |
+
 ---
 
 ### &nbsp; ♜ &nbsp; GRADIO EXPERIMENTS
@@ -31,6 +39,13 @@ Experiments in image processing, color recognition, and real-time visual detecti
 
 ```text
 .
+├── StylevanaProductDiscovery/
+│   ├── app.py
+│   ├── stylevana_search.py
+│   ├── stylevana-raw.csv
+│   ├── requirements.txt
+│   └── README.md
+│
 ├── gradio/
 │   ├── gradioImageFilter.py
 │   └── gradioTutorial.py
